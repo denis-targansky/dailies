@@ -1,0 +1,19 @@
+<Configuration>
+  <Properties>
+    <Property name="filename">logs/dailies.log</Property>
+  </Properties>
+  <Appenders>
+    <Console name="STDOUT">
+      <PatternLayout pattern="%-5p %d %m%n"/>
+    </Console>
+    <File name="File" fileName="${filename}">
+      <PatternLayout pattern="%-5p %d %C{5.} [%t] %m%n" />
+    </File>
+  </Appenders>
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="STDOUT"/>
+      <AppenderRef ref="File"/>
+    </Root>
+  </Loggers>
+</Configuration>
