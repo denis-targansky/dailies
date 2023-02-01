@@ -5,10 +5,10 @@
  * @author Denis Targansky
  *
  */
-module YFinancePoller {
+module dailies {
+	requires wrapper;
 	requires org.apache.logging.log4j;
 	requires YahooFinanceAPI;
 	requires org.apache.poi.ooxml;
-	requires wrapper;
 	requires com.fasterxml.jackson.databind;
 }
